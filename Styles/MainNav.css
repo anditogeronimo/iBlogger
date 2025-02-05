@@ -1,0 +1,180 @@
+/* Navigasi utama di atas */
+#mainNav {
+  height: 44px;
+  z-index: 1023;
+  line-height: 44px;
+  background-color: #f3f3f3;
+  transition: all .35s ease, visibility 0s ease;
+}
+/* Judul website di navigasi atas */
+.navbar-brand {
+  font-weight: 480;
+  padding: 0px 10px;
+  --bs-navbar-brand-color: #303030;
+  --bs-navbar-brand-font-size: 20px;
+  --bs-navbar-brand-hover-color: black;
+}
+/* Container link navigasi di layar lebar */
+#wideScreenNavLinks {
+  font-size: 16px;
+  font-weight: 300;
+}
+/* Link di navigasi layar lebar */
+.nav-link {
+  --bs-nav-link-padding-y: 0;
+  --bs-nav-link-color: #303030;
+  --bs-nav-link-padding-x: 10px;
+  --bs-nav-link-hover-color: black;
+}
+/* Form pencarian di navigasi layar lebar */
+#wideScreenSearchForm {
+  height: 44px;
+  display: none;
+}
+/* Kotak pencarian di navigasi layar lebar */
+#wideScreenSearchBar {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 300;
+  padding-left: 1px;
+}
+#wideScreenSearchBar::placeholder {
+  color: #6e6e73;
+  font-size: 18px;
+  height: 20.87px;
+  font-weight: 300;
+}
+#wideScreenSearchBar::-webkit-search-cancel-button,
+#wideScreenSearchBar::-webkit-search-results-button {
+  -webkit-appearance: none;
+}
+/* Icon search di kanan navigasi layar lebar (bisa jadi X pas pencarian aktif) */
+#wideScreenSearchBtn {
+  color: #828282;
+  font-size: 18px;
+  padding: 0px 10px;
+}
+#wideScreenSearchBtn .bi-search:hover {
+  color: #666666;
+}
+#wideScreenSearchBtn .bi-x-lg:hover {
+  color: black;
+}
+/* Bagian quick links saat pencarian di layar lebar */
+#wideScreenSearchQuickLinks {
+  top: 44px;
+  padding: 23px 40px 18px;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+/* Bagian quick links saat pencarian di layar lebar */
+.wideScreenSearchQuickLink {
+  height: 28px;
+  color: #1d1d1f;
+  font-size: 14px;
+  margin: 6px -32px;
+  line-height: 28px;
+  padding-left: 52px;
+}
+.wideScreenSearchQuickLink:hover {
+  color: #0066cc;
+  background-color: #f5f5f7;
+}
+/* Background gelap saat pencarian di layar lebar */
+#wideScreenSearchDimBackground {
+  display: none;
+  z-index: 1022;
+  position: absolute;
+  background-color: #0000007c;
+}
+/* Tombol menu di navigasi atas layar kecil */
+#hamburgerBtn {
+  font-size: 26px;
+  --bs-btn-color: #303030;
+  --bs-btn-hover-color: black;
+}
+/* Navigasi fullscreen buat layar kecil */
+#fullScreenNav {
+  z-index: 1021;
+}
+/* Form pencarian di navigasi fullscreen layar kecil */
+#smallScreenSearchForm {
+  padding: 0px 10px 16px;
+  transition: all .35s ease;
+}
+/* Icon search di navigasi fullscreen layar kecil */
+#smallScreenSearchIcon {
+  color: #a5a5a5;
+  font-size: 17px;
+  padding: 6px 8px;
+  transition: all .35s ease;
+  background-color: #d7d7d7;
+}
+/* Kotak pencarian di navigasi fullscreen layar kecil */
+#smallScreenSearchBar {
+  color: #333333;
+  font-size: 17px;
+  font-weight: 250;
+  line-height: 21px;
+  padding-left: 1px;
+  background-color: #d7d7d7;
+}
+#smallScreenSearchBar::placeholder {
+  color: #6e6e73;
+}
+#smallScreenSearchBar::-webkit-search-cancel-button,
+#smallScreenSearchBar::-webkit-search-results-button {
+  -webkit-appearance: none;
+}
+/* Tombol cancel di pencarian navigasi fullscreen layar kecil */
+#smallScreenSearchCancelBtn {
+  width: 0;
+  padding: 0;
+  color: #0066cc;
+  font-size: 17px;
+  font-weight: 300;
+  visibility: hidden;
+  transition: all .35s ease, visibility 0s ease;
+}
+/* Judul quick links di pencarian navigasi fullscreen layar kecil */
+#smallScreenSearchQuickLinksTitle {
+  height: 0;
+  margin: 0px;
+  color: #86868b;
+  font-size: 12px;
+  font-weight: 250;
+  line-height: 16px;
+  visibility: hidden;
+  transition: all .35s ease, visibility 0s ease;
+}
+/* Quick links di navigasi fullscreen layar kecil */
+.smallScreenSearchQuickLink {
+  height: 45px;
+  color: #333333;
+  font-size: 17px;
+  line-height: 45px;
+  transition: all .25s ease;
+}
+.smallScreenSearchQuickLink.hoverBlack:hover {
+  color: black;
+}
+.smallScreenSearchQuickLink.hoverBlue:hover {
+  color: #2897ff;
+}
+/* Garis pemisah quick links di navigasi fullscreen layar kecil */
+.quickLinkHr {
+  color: #d7d7d7;
+  transition: all .35s ease;
+}
+/* Kalau layar lebih dari 768px, tampilin navigasi lebar */
+@media only screen and (min-width: 768px) {
+  #mainNav {
+    height: 44px;
+  }
+}
+/* Kalau layar kurang dari 768px, sembunyikan navigasi lebar */
+@media only screen and (max-width: 767.98px) {
+  #mainNav {
+    height: 48px;
+  }
+}
